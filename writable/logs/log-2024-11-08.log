@@ -1,0 +1,356 @@
+CRITICAL - 2024-11-08 14:56:49 --> ErrorException: Undefined variable $name
+[Method: GET, Route: form]
+in APPPATH\Views\Form.php on line 22.
+ 1 APPPATH\Views\Form.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name', 'C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Views\\Form.php', 22)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Views\\Form.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Form', [], true)
+ 5 APPPATH\Controllers\Formulaire.php(9): view('Form')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Formulaire->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formulaire))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-11-08 14:58:02 --> ErrorException: Undefined variable $name
+[Method: GET, Route: form]
+in APPPATH\Views\Form.php on line 22.
+ 1 APPPATH\Views\Form.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name', 'C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Views\\Form.php', 22)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Views\\Form.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Form', [], true)
+ 5 APPPATH\Controllers\Formulaire.php(9): view('Form')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Formulaire->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formulaire))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-11-08 14:58:06 --> ErrorException: Undefined variable $name
+[Method: GET, Route: form]
+in APPPATH\Views\Form.php on line 22.
+ 1 APPPATH\Views\Form.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name', 'C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Views\\Form.php', 22)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Views\\Form.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Form', [], true)
+ 5 APPPATH\Controllers\Formulaire.php(9): view('Form')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Formulaire->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formulaire))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-11-08 14:59:16 --> ErrorException: Undefined variable $name
+[Method: GET, Route: form]
+in APPPATH\Views\Form.php on line 22.
+ 1 APPPATH\Views\Form.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name', 'C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Views\\Form.php', 22)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Views\\Form.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Form', [], true)
+ 5 APPPATH\Controllers\Formulaire.php(9): view('Form')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Formulaire->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formulaire))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-11-08 14:59:23 --> ErrorException: Undefined variable $name
+[Method: GET, Route: form]
+in APPPATH\Views\Form.php on line 22.
+ 1 APPPATH\Views\Form.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name', 'C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Views\\Form.php', 22)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Views\\Form.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Form', [], true)
+ 5 APPPATH\Controllers\Formulaire.php(9): view('Form')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Formulaire->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formulaire))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-11-08 14:59:40 --> ErrorException: Undefined variable $name
+[Method: GET, Route: form]
+in APPPATH\Views\Form.php on line 21.
+ 1 APPPATH\Views\Form.php(21): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name', 'C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Views\\Form.php', 21)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Views\\Form.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Form', [], true)
+ 5 APPPATH\Controllers\Formulaire.php(9): view('Form')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Formulaire->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formulaire))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-11-08 15:00:58 --> ErrorException: Undefined variable $name
+[Method: GET, Route: form]
+in APPPATH\Views\Form.php on line 22.
+ 1 APPPATH\Views\Form.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name', 'C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Views\\Form.php', 22)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Views\\Form.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Form', [], true)
+ 5 APPPATH\Controllers\Formulaire.php(9): view('Form')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Formulaire->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formulaire))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-11-08 15:00:59 --> ErrorException: Undefined variable $name
+[Method: GET, Route: form]
+in APPPATH\Views\Form.php on line 22.
+ 1 APPPATH\Views\Form.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $name', 'C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Views\\Form.php', 22)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Views\\Form.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Form', [], true)
+ 5 APPPATH\Controllers\Formulaire.php(9): view('Form')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Formulaire->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formulaire))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-11-08 15:05:00 --> ErrorException: Undefined variable $nom
+[Method: GET, Route: form]
+in APPPATH\Views\Form.php on line 22.
+ 1 APPPATH\Views\Form.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nom', 'C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Views\\Form.php', 22)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Views\\Form.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Form', [], true)
+ 5 APPPATH\Controllers\Formulaire.php(9): view('Form')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Formulaire->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formulaire))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-11-08 15:05:01 --> ErrorException: Undefined variable $nom
+[Method: GET, Route: form]
+in APPPATH\Views\Form.php on line 22.
+ 1 APPPATH\Views\Form.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nom', 'C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Views\\Form.php', 22)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Views\\Form.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Form', [], true)
+ 5 APPPATH\Controllers\Formulaire.php(9): view('Form')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Formulaire->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formulaire))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-11-08 15:05:01 --> ErrorException: Undefined variable $nom
+[Method: GET, Route: form]
+in APPPATH\Views\Form.php on line 22.
+ 1 APPPATH\Views\Form.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nom', 'C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Views\\Form.php', 22)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Views\\Form.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Form', [], true)
+ 5 APPPATH\Controllers\Formulaire.php(9): view('Form')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Formulaire->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formulaire))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-11-08 15:07:20 --> ErrorException: Undefined variable $nom
+[Method: GET, Route: form]
+in APPPATH\Views\Form.php on line 22.
+ 1 APPPATH\Views\Form.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nom', 'C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Views\\Form.php', 22)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Views\\Form.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Form', [], true)
+ 5 APPPATH\Controllers\Formulaire.php(9): view('Form')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Formulaire->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formulaire))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-11-08 15:09:34 --> ErrorException: Undefined variable $nom
+[Method: GET, Route: form]
+in APPPATH\Views\Form.php on line 22.
+ 1 APPPATH\Views\Form.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nom', 'C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Views\\Form.php', 22)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Views\\Form.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Form', [], true)
+ 5 APPPATH\Controllers\Formulaire.php(9): view('Form')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Formulaire->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formulaire))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-11-08 15:09:35 --> ErrorException: Undefined variable $nom
+[Method: GET, Route: form]
+in APPPATH\Views\Form.php on line 22.
+ 1 APPPATH\Views\Form.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nom', 'C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Views\\Form.php', 22)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Views\\Form.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Form', [], true)
+ 5 APPPATH\Controllers\Formulaire.php(9): view('Form')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Formulaire->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formulaire))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-11-08 15:09:38 --> ErrorException: Undefined variable $nom
+[Method: GET, Route: form]
+in APPPATH\Views\Form.php on line 22.
+ 1 APPPATH\Views\Form.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nom', 'C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Views\\Form.php', 22)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Views\\Form.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Form', [], true)
+ 5 APPPATH\Controllers\Formulaire.php(9): view('Form')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Formulaire->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formulaire))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-11-08 15:09:40 --> ErrorException: Undefined variable $nom
+[Method: GET, Route: form]
+in APPPATH\Views\Form.php on line 22.
+ 1 APPPATH\Views\Form.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nom', 'C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Views\\Form.php', 22)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Views\\Form.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Form', [], true)
+ 5 APPPATH\Controllers\Formulaire.php(9): view('Form')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Formulaire->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formulaire))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-11-08 15:10:08 --> ErrorException: Undefined variable $nom
+[Method: GET, Route: form]
+in APPPATH\Views\Form.php on line 22.
+ 1 APPPATH\Views\Form.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nom', 'C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Views\\Form.php', 22)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Views\\Form.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Form', [], true)
+ 5 APPPATH\Controllers\Formulaire.php(9): view('Form')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Formulaire->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formulaire))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-11-08 15:11:41 --> ErrorException: Undefined variable $nom
+[Method: GET, Route: form]
+in APPPATH\Views\Form.php on line 22.
+ 1 APPPATH\Views\Form.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nom', 'C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Views\\Form.php', 22)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Views\\Form.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Form', [], true)
+ 5 APPPATH\Controllers\Formulaire.php(9): view('Form')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Formulaire->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formulaire))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-11-08 15:13:00 --> ErrorException: Undefined variable $nom
+[Method: GET, Route: form]
+in APPPATH\Views\Form.php on line 22.
+ 1 APPPATH\Views\Form.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nom', 'C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Views\\Form.php', 22)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Views\\Form.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Form', [], true)
+ 5 APPPATH\Controllers\Formulaire.php(9): view('Form')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Formulaire->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formulaire))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-11-08 15:13:01 --> ErrorException: Undefined variable $nom
+[Method: GET, Route: form]
+in APPPATH\Views\Form.php on line 22.
+ 1 APPPATH\Views\Form.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nom', 'C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Views\\Form.php', 22)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Views\\Form.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('Form', [], true)
+ 5 APPPATH\Controllers\Formulaire.php(9): view('Form')
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Formulaire->index()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formulaire))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-11-08 15:16:39 --> ErrorException: Undefined variable $nom
+[Method: POST, Route: form]
+in APPPATH\Controllers\Formulaire.php on line 15.
+ 1 APPPATH\Controllers\Formulaire.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nom', 'C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Controllers\\Formulaire.php', 15)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Controllers\\Formulaire.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Controllers\\Formulaire.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Formulaire')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Formulaire')
+ 6 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Formulaire', true)
+ 7 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-11-08 15:16:42 --> ErrorException: Undefined variable $nom
+[Method: GET, Route: form]
+in APPPATH\Controllers\Formulaire.php on line 15.
+ 1 APPPATH\Controllers\Formulaire.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nom', 'C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Controllers\\Formulaire.php', 15)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Controllers\\Formulaire.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Controllers\\Formulaire.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Formulaire')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Formulaire')
+ 6 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Formulaire', true)
+ 7 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-11-08 15:17:07 --> ErrorException: Undefined variable $nom
+[Method: GET, Route: form]
+in APPPATH\Controllers\Formulaire.php on line 15.
+ 1 APPPATH\Controllers\Formulaire.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nom', 'C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Controllers\\Formulaire.php', 15)
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(317): include_once('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Controllers\\Formulaire.php')
+ 3 SYSTEMPATH\Autoloader\Autoloader.php(296): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Controllers\\Formulaire.php')
+ 4 SYSTEMPATH\Autoloader\Autoloader.php(272): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\Formulaire')
+ 5 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\Formulaire')
+ 6 SYSTEMPATH\CodeIgniter.php(887): class_exists('\\App\\Controllers\\Formulaire', true)
+ 7 SYSTEMPATH\CodeIgniter.php(496): CodeIgniter\CodeIgniter->startController()
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-11-08 15:28:11 --> ErrorException: Undefined variable $nom
+[Method: POST, Route: form]
+in APPPATH\Controllers\Formulaire.php on line 17.
+ 1 APPPATH\Controllers\Formulaire.php(17): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nom', 'C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Controllers\\Formulaire.php', 17)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Formulaire->index()
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Formulaire))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 8 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\public\\index.php')
