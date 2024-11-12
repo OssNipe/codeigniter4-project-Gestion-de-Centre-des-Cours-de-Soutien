@@ -22,7 +22,50 @@ class StudentController extends Controller
         // Pass the students data to the view
         return view('manage_members', $data);
     }
+    public function edit($id)
+    {
+        $model = new StudentModel();
+        
+        // Fetch the student's data based on the student ID
+        $student = $model->find($id);
 
+        // Check if student exists
+        if (!$student) {
+            return redirect()->to('students/manage')->with('error', 'Student not found');
+        }
+
+        // Pass the student data to the edit view
+        return view('edit_student', ['student' => $student]);
+    }
+
+    // Handle the form submission and update student data in the database
+    public function update($id)
+    {
+        $model = new StudentModel();
+
+        // Get the input data from the form
+        $data = [
+            'fullname'      => $this->request->getPost('fullname'),
+            'dob'           => $this->request->getPost('dob'),
+            'email'         => $this->request->getPost('email'),
+            'contact_number'=> $this->request->getPost('contact_number'),
+            'address'       => $this->request->getPost('address'),
+        ];
+
+        // Handle the file upload for photo (optional)
+        $file = $this->request->getFile('photo');
+        if ($file->isValid() && !$file->hasMoved()) {
+            // Move the uploaded photo to the public/images/ folder
+            $uploadPath = FCPATH . 'images';
+            $file->move($uploadPath, $file->getName());
+            $data['photo'] = $file->getName();
+        }
+
+        // Update the student record
+        $model->update($id, $data);
+
+        // Redirect to the students page with a success message
+        return redirect()->to('/students/manage')->with('message', 'Student updated successfully');}
     // Handle the form submission and add a student to the database
     public function store()
     {
