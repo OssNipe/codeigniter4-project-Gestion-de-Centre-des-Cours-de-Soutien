@@ -4,7 +4,8 @@ namespace App\Controllers;
 
 use App\Models\StudentModel;
 use CodeIgniter\Controller;
-
+use Dompdf\Dompdf;
+use Dompdf\Options;
 class StudentController extends Controller
 {
     // Show the form to add a student
@@ -12,6 +13,21 @@ class StudentController extends Controller
     {
         return view('add_student');
     }
+    public function profile($id)
+{
+    $model = new StudentModel();
+    
+    // Fetch student details by ID
+    $student = $model->find($id);
+    
+    if (!$student) {
+        return redirect()->to('/students/manage')->with('error', 'Student not found');
+    }
+    
+    // Pass the student data to the view
+    return view('student_profile', ['student' => $student]);
+}
+
     public function manageStudents()
     {
         $model = new StudentModel();
@@ -124,4 +140,15 @@ class StudentController extends Controller
         // Redirect back to the students list with a success message
         return redirect()->to('/students/manage')->with('message', 'Student deleted successfully');
     }
+    public function printCard($id)
+{
+    $model = new StudentModel();
+    $student = $model->find($id);
+
+    if (!$student) {
+        return redirect()->to('/students')->with('error', 'Student not found');
+    }
+
+    return view('student_card', ['student' => $student]);
+}
 }

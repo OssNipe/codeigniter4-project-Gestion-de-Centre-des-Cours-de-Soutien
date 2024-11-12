@@ -16,6 +16,8 @@ $routes->get('/student/edit/(:num)', 'StudentController::edit/$1',['filter' => '
 $routes->post('/student/update/(:num)', 'StudentController::update/$1',['filter' => 'session']);
 $routes->get('/student/delete/(:num)', 'StudentController::delete/$1',['filter' => 'session']);
 
+$routes->get('student/profile/(:num)', 'StudentController::profile/$1',['filter' => 'session']);
+$routes->get('student/printCard/(:num)', 'StudentController::printCard/$1',['filter' => 'session']);
 
 service('auth')->routes($routes);
 

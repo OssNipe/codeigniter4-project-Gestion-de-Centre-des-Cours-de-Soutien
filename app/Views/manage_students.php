@@ -51,6 +51,8 @@
                             <!-- Add actions like Edit, Delete here -->
                             <a href="<?= site_url('student/edit/' . esc($student['id'])); ?>">Edit</a> | 
                             <a href="<?= site_url('student/delete/' . esc($student['id'])); ?>" onclick="return confirm('Are you sure you want to delete this student?')">Delete</a>
+                            <a href="<?= site_url('student/profile/' . esc($student['id'])); ?>" class="btn btn-info btn-sm">View Profile</a>
+
                         </td>
                     </tr>
                 <?php endforeach; ?>

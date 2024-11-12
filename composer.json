@@ -14,6 +14,7 @@
         "ext-intl": "*",
         "ext-mbstring": "*",
         "codeigniter4/shield": "^1.1",
+        "dompdf/dompdf": "^3.0",
         "laminas/laminas-escaper": "^2.13",
         "psr/log": "^3.0"
     },
