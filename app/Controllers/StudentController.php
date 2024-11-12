@@ -12,7 +12,7 @@ class StudentController extends Controller
     {
         return view('add_student');
     }
-    public function manageMembers()
+    public function manageStudents()
     {
         $model = new StudentModel();
         
@@ -20,7 +20,7 @@ class StudentController extends Controller
         $data['students'] = $model->findAll();  // Fetches all students
         
         // Pass the students data to the view
-        return view('manage_members', $data);
+        return view('manage_students', $data);
     }
     public function edit($id)
     {
@@ -71,7 +71,7 @@ class StudentController extends Controller
     {
         $model = new StudentModel();
 
-        // Get the input data from the form
+        // Get the input data from the formF
         $data = [
             'fullname'      => $this->request->getPost('fullname'),
             'dob'           => $this->request->getPost('dob'),
@@ -98,5 +98,30 @@ class StudentController extends Controller
         }
         // Redirect or return a success message
         return redirect()->to('student/create')->with('message', 'Student added successfully');
+    }
+    public function delete($id)
+    {
+        $model = new StudentModel();
+
+        // Check if the student exists before trying to delete
+        $student = $model->find($id);
+
+        if (!$student) {
+            return redirect()->to('/students/manage')->with('error', 'Student not found');
+        }
+
+        // Delete the student's photo if it exists
+        if (!empty($student['photo'])) {
+            $photoPath = FCPATH . 'images/' . $student['photo'];
+            if (file_exists($photoPath)) {
+                unlink($photoPath); // Delete the file from the server
+            }
+        }
+
+        // Delete the student record from the database
+        $model->delete($id);
+
+        // Redirect back to the students list with a success message
+        return redirect()->to('/students/manage')->with('message', 'Student deleted successfully');
     }
 }
