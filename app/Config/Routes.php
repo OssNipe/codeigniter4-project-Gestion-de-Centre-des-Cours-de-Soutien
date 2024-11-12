@@ -19,6 +19,12 @@ $routes->get('/student/delete/(:num)', 'StudentController::delete/$1',['filter' 
 $routes->get('student/profile/(:num)', 'StudentController::profile/$1',['filter' => 'session']);
 $routes->get('student/printCard/(:num)', 'StudentController::printCard/$1',['filter' => 'session']);
 
+$routes->get('/course/create', 'CourseController::create', ['filter' => 'session']);
+$routes->post('/course/store', 'CourseController::store', ['filter' => 'session']);
+$routes->get('/courses/manage', 'CourseController::manageCourses', ['filter' => 'session']);
+$routes->get('/course/edit/(:num)', 'CourseController::edit/$1',['filter' => 'session']);
+$routes->post('/course/update/(:num)', 'CourseController::update/$1',['filter' => 'session']);
+$routes->get('/course/delete/(:num)', 'CourseController::delete/$1',['filter' => 'session']);
 service('auth')->routes($routes);
 
 

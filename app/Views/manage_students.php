@@ -7,7 +7,7 @@
     <title>Manage Members</title>
 </head>
 <body>
-    <h1>Manage Members</h1>
+    <h1>Manage Students</h1>
 
     <!-- Display Success Message if available -->
     <?php if (session()->getFlashdata('message')) : ?>
