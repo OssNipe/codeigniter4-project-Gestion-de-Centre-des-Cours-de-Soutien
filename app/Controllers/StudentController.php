@@ -4,14 +4,18 @@ namespace App\Controllers;
 
 use App\Models\StudentModel;
 use CodeIgniter\Controller;
-use Dompdf\Dompdf;
-use Dompdf\Options;
+use App\Models\CourseModel; 
+use App\Models\EnrollmentModel ; 
+
+
 class StudentController extends Controller
 {
     // Show the form to add a student
     public function create()
     {
-        return view('add_student');
+        $model = new CourseModel();
+        $courses = $model ->findAll();
+        return view('add_student', ['courses' => $courses]);
     }
     public function profile($id)
 {
@@ -103,17 +107,35 @@ class StudentController extends Controller
             $photo->move($uploadPath, $photo->getName());  // If you're still using the writable folder for temporary storage
             $data['photo'] = $photo->getName();  // Store the file name in the database
         }
-
-        // Insert data into the students table
-        if ($model->save($data)) {
-            // Set a flashdata message on successful insertion
+        $studentId = $model->insert($data);
+        if($studentId){
+            $courseId = $this->request->getPost('course_id');
+            $duration = $this->request->getPost('duration');
+            $course = $this->getCourseById($courseId);
+            $amountPaid = $course['price'] * $duration;
+            $enrollModel = new EnrollmentModel();
+            $enrollModel->save([
+                'student_id' => $studentId,
+                'course_id' => $courseId,
+                'duration' => $duration,
+                'amount_paid' => $amountPaid,
+                'expiry_date' => date('Y-m-d', strtotime("+" . $duration . " months"))
+            ]);
             session()->setFlashdata('message', 'Student added successfully');
+
         } else {
             // Handle the case when saving fails (optional)
             session()->setFlashdata('message', 'There was an error adding the student');
         }
+        // Insert data into the students table
+        
         // Redirect or return a success message
         return redirect()->to('student/create')->with('message', 'Student added successfully');
+    }
+    private function getCourseById($id)
+    {
+        $courseModel = new CourseModel();
+        return $courseModel->find($id);
     }
     public function delete($id)
     {
