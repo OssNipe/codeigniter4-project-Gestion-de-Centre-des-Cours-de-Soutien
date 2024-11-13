@@ -132,6 +132,35 @@ class StudentController extends Controller
         // Redirect or return a success message
         return redirect()->to('student/create')->with('message', 'Student added successfully');
     }
+    public function renew()
+{
+    $studentModel = new StudentModel();
+    $enrollmentModel = new EnrollmentModel();
+    $courseModel = new CourseModel();
+
+    // Fetch all students with their courses
+    $students = $studentModel->findAll();
+
+    foreach ($students as &$student) {
+        $enrollments = $enrollmentModel->where('student_id', $student['id'])->findAll();
+        $student['courses'] = [];
+
+        foreach ($enrollments as $enrollment) {
+            $course = $courseModel->find($enrollment['course_id']);
+            $status = (strtotime($enrollment['expiry_date']) >= time()) ? 'Active' : 'Expired';
+
+            $student['courses'][] = [
+                'course_id'    => $enrollment['course_id'],
+                'course_name'  => $course['course_name'],
+                'expiry_date'  => $enrollment['expiry_date'],
+                'status'       => $status,
+                'enrollment_id'=> $enrollment['id']
+            ];
+        }
+    }
+
+    return view('renew', ['students' => $students]);
+}
     private function getCourseById($id)
     {
         $courseModel = new CourseModel();

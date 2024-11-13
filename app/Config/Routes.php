@@ -25,6 +25,13 @@ $routes->get('/courses/manage', 'CourseController::manageCourses');
 $routes->get('/course/edit/(:num)', 'CourseController::edit/$1');
 $routes->post('/course/update/(:num)', 'CourseController::update/$1');
 $routes->get('/course/delete/(:num)', 'CourseController::delete/$1');
+$routes->get('/student/renew', 'StudentController::renew');
+$routes->get('/enrollment/add/(:num)', 'EnrollmentController::addEnrollment/$1');
+$routes->post('/enrollment/storeEnrollment', 'EnrollmentController::storeEnrollment');
+// In Routes.php
+$routes->get('/enrollment/renew/(:num)', 'EnrollmentController::renew/$1');
+$routes->post('/enrollment/renew/(:num)', 'EnrollmentController::storeRenewal/$1');
+
 service('auth')->routes($routes);
 
 
