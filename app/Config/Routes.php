@@ -31,6 +31,13 @@ $routes->post('/enrollment/storeEnrollment', 'EnrollmentController::storeEnrollm
 // In Routes.php
 $routes->get('/enrollment/renew/(:num)', 'EnrollmentController::renew/$1');
 $routes->post('/enrollment/renew/(:num)', 'EnrollmentController::storeRenewal/$1');
+$routes->get('/dashboard', 'DashboardController::index');
+
+$routes->get('/report/membership', 'ReportController::membershipReport');
+$routes->post('/report/generate', 'ReportController::generateReport');
+
+$routes->get('revenue', 'ReportController::revenuReport');
+$routes->post('revenue/generate', 'ReportController::generateRevenueReport');
 
 service('auth')->routes($routes);
 

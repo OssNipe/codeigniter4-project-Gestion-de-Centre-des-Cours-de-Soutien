@@ -4,6 +4,8 @@ namespace App\Controllers;
 use App\Models\StudentModel;
 use App\Models\CourseModel;
 use App\Models\EnrollmentModel;
+use App\Models\RenewalModel;
+
 use CodeIgniter\Controller;
 
 class EnrollmentController extends Controller
@@ -99,6 +101,8 @@ class EnrollmentController extends Controller
 public function storeRenewal($student_id)
 {
     $enrollmentModel = new EnrollmentModel();
+    $renewalModel = new RenewalModel(); // Assuming you have a model for the 'renewals' table
+    $courseModel = new CourseModel(); // Assuming you have a model for the 'courses' table
 
     // Get form data
     $enrollment_id = $this->request->getPost('enrollment_id');
@@ -108,23 +112,47 @@ public function storeRenewal($student_id)
     $enrollment = $enrollmentModel->find($enrollment_id);
 
     if ($enrollment) {
-        // Calculate new expiry date
+        // Calculate the new expiry date
+        $course = $courseModel->find($enrollment['course_id']);
+        if (!$course) {
+            return redirect()->back()->with('error', 'Course not found');
+        }
+        $renewal_amount = $course['price'] * $renew_duration;
+
         $new_expiry_date = date('Y-m-d', strtotime($enrollment['expiry_date'] . " +$renew_duration months"));
 
-        // Update the enrollment record with the new expiry date
+        // Calculate the renewal amount based on course price and renewal duration
+        $courseModel = new CourseModel();
+        $course = $courseModel->find($enrollment['course_id']);
+        $renewal_amount = $course['price'] * $renew_duration;
+
+        // Update the enrollment record with the new expiry date and duration
         $data = [
             'expiry_date' => $new_expiry_date,
-            'duration' => $enrollment['duration'] + $renew_duration, // Add to the existing duration
+            'duration' => $enrollment['duration'] + $renew_duration, 
+            'amount_paid' => $enrollment['amount_paid'] + $renewal_amount // Update amount_paid
+            // Add to the existing duration
         ];
 
         $enrollmentModel->update($enrollment_id, $data);
 
-        // Redirect with success message
-        return redirect()->to('/enrollment/renew/' . $student_id)->with('message', 'Course renewed successfully');
+        // Insert a record into the renewals table
+        $renewalData = [
+            'enrollment_id' => $enrollment_id,
+            'renew_date' => date('Y-m-d'),
+            'months' => $renew_duration,
+            'new_expiry_date' => $new_expiry_date,
+            'renewal_amount' => $renewal_amount,
+        ];
+
+        $renewalModel->insert($renewalData);
+
+        // Redirect with a success message
+        return redirect()->to('/enrollment/renew/' . $student_id)
+                         ->with('message', 'Course renewed successfully');
     }
 
     // If the enrollment is not found, redirect with an error message
     return redirect()->back()->with('error', 'Enrollment not found');
 }
-
 }
