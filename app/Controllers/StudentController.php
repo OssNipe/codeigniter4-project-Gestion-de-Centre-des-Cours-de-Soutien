@@ -3,6 +3,7 @@
 namespace App\Controllers;
 
 use App\Models\StudentModel;
+use App\Models\SettingsModel;
 use CodeIgniter\Controller;
 use App\Models\CourseModel; 
 use App\Models\EnrollmentModel ; 
@@ -193,13 +194,33 @@ class StudentController extends Controller
     }
     public function printCard($id)
 {
+    $settingsModel = new SettingsModel();
+    $enrollmentModel = new EnrollmentModel();
+    $courseModel = new CourseModel();
     $model = new StudentModel();
     $student = $model->find($id);
+    $settings = $settingsModel->first(); // Fetch the settings (assuming only one row exists)
 
     if (!$student) {
-        return redirect()->to('/students')->with('error', 'Student not found');
+        return redirect()->to('/students/manage')->with('error', 'Student not found');
     }
-
-    return view('student_card', ['student' => $student]);
+    $enrollments = $enrollmentModel->where('student_id', $id)->findAll();
+    $courses = [];
+    foreach ($enrollments as $enrollment) {
+        $course = $courseModel->find($enrollment['course_id']);
+        if ($course) {
+            $courses[] = [
+                'course_name' => $course['course_name'],
+                'amount_paid' => $enrollment['amount_paid'],
+                'expiry_date' => $enrollment['expiry_date']
+            ];
+        }
+    }
+    return view('student_card', [
+        'student' => $student,
+        'system_name' => $settings['system_name'],
+        'logo' => $settings['logo'],
+        'courses' => $courses
+    ]);
 }
 }

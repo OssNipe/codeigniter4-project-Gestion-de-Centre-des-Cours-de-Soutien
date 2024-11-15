@@ -39,6 +39,10 @@ $routes->post('/report/generate', 'ReportController::generateReport');
 $routes->get('revenue', 'ReportController::revenuReport');
 $routes->post('revenue/generate', 'ReportController::generateRevenueReport');
 
+$routes->get('settings', 'SettingsController::index');
+$routes->post('settings/update', 'SettingsController::update');
+
+
 service('auth')->routes($routes);
 
 

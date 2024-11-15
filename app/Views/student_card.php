@@ -113,10 +113,11 @@
         <span class="title">Membership card
         <!-- <img src="https://i0.wp.com/revisewise.ie/wp-content/uploads/2019/07/Your-Logo-here.png?ssl=1" /> -->
    
-             <span class='logo'><img src='' alt='Logo'></span>
-        
+        <?php if (!empty($logo)) : ?>
+    <img src="<?= base_url($logo) ?>" alt="Logo" class="logo">
+<?php endif; ?>        
     </span>
-        <span class="emboss"><b>school</b></span>
+        <span class="emboss"><b><?= esc($system_name) ?></b></span>
         <span class="emboss"><b><?= esc($student['id']) ?></b></span>
         <span class="emboss"><?= esc($student['fullname']) ?></span>
         <div>
@@ -131,10 +132,28 @@
         
         <div>
         <hr><small>
-        <span class="emboss2">Valid till :</span>
+       <!--  <span class="emboss2">Valid till :</span>-->
         </small>
     </div>
-
+    <?php if (!empty($courses)) : ?>
+    <h3>Enrolled Courses</h3>
+    <table>
+        <tr>
+            <th>Course Name</th>
+            <th>Amount Paid</th>
+            <th>Expiry Date</th>
+        </tr>
+        <?php foreach ($courses as $course) : ?>
+        <tr>
+            <td><?= esc($course['course_name']) ?></td>
+            <td><?= esc($course['amount_paid']) ?> DH</td>
+            <td><?= esc($course['expiry_date']) ?></td>
+        </tr>
+        <?php endforeach; ?>
+    </table>
+<?php else : ?>
+    <p>No courses enrolled.</p>
+<?php endif; ?>
     </div>
 
    
