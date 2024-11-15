@@ -1,4 +1,6 @@
 <!-- In app/Views/enrollment/renew.php -->
+<?php include 'sidebar.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
