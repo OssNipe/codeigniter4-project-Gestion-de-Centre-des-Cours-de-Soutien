@@ -106,6 +106,7 @@
         <a href="<?= site_url('dashboard') ?>">dashboard</a>
         <a href="<?= site_url('revenue') ?>">revenu Reports</a>
         <a href="<?= site_url('report/membership') ?>">Membership Reports</a>
+        <a href="<?= site_url('announcements/manage') ?>">Announcements</a>
         <a href="<?= site_url('settings') ?>">Settings</a>
         <a href="<?= site_url('logout') ?>" class="logout-btn">Logout</a>
 

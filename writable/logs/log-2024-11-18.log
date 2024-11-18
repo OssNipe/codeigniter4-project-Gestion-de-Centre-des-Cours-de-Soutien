@@ -1,0 +1,88 @@
+ERROR - 2024-11-18 11:55:10 --> Error connecting to the database: mysqli_sql_exception: No connection could be made because the target machine actively refused it in C:\Users\Home\Desktop\codeigniter4-framework-v4.5.5-0-g2849e7f\codeigniter4-framework-2849e7f\system\Database\MySQLi\Connection.php:187
+Stack trace:
+#0 C:\Users\Home\Desktop\codeigniter4-framework-v4.5.5-0-g2849e7f\codeigniter4-framework-2849e7f\system\Database\MySQLi\Connection.php(187): mysqli->real_connect('localhost', 'root', '', 'codeigniter', 3306, '', 0)
+#1 C:\Users\Home\Desktop\codeigniter4-framework-v4.5.5-0-g2849e7f\codeigniter4-framework-2849e7f\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\Users\Home\Desktop\codeigniter4-framework-v4.5.5-0-g2849e7f\codeigniter4-framework-2849e7f\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\Users\Home\Desktop\codeigniter4-framework-v4.5.5-0-g2849e7f\codeigniter4-framework-2849e7f\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\Users\Home\Desktop\codeigniter4-framework-v4.5.5-0-g2849e7f\codeigniter4-framework-2849e7f\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(186): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\Users\Home\Desktop\codeigniter4-framework-v4.5.5-0-g2849e7f\codeigniter4-framework-2849e7f\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(NULL)
+#6 C:\Users\Home\Desktop\codeigniter4-framework-v4.5.5-0-g2849e7f\codeigniter4-framework-2849e7f\vendor\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('Config\\Auth', 'sessionConfig', NULL)
+#7 C:\Users\Home\Desktop\codeigniter4-framework-v4.5.5-0-g2849e7f\codeigniter4-framework-2849e7f\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(25): CodeIgniter\Settings\Settings->get('Auth.sessionCon...')
+#8 C:\Users\Home\Desktop\codeigniter4-framework-v4.5.5-0-g2849e7f\codeigniter4-framework-2849e7f\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(685): setting('Auth.sessionCon...')
+#9 C:\Users\Home\Desktop\codeigniter4-framework-v4.5.5-0-g2849e7f\codeigniter4-framework-2849e7f\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(703): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+#10 C:\Users\Home\Desktop\codeigniter4-framework-v4.5.5-0-g2849e7f\codeigniter4-framework-2849e7f\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(390): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserKey('id')
+#11 C:\Users\Home\Desktop\codeigniter4-framework-v4.5.5-0-g2849e7f\codeigniter4-framework-2849e7f\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(374): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+#12 C:\Users\Home\Desktop\codeigniter4-framework-v4.5.5-0-g2849e7f\codeigniter4-framework-2849e7f\vendor\codeigniter4\shield\src\Filters\SessionAuth.php(54): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+#13 C:\Users\Home\Desktop\codeigniter4-framework-v4.5.5-0-g2849e7f\codeigniter4-framework-2849e7f\system\Filters\Filters.php(205): CodeIgniter\Shield\Filters\SessionAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#14 C:\Users\Home\Desktop\codeigniter4-framework-v4.5.5-0-g2849e7f\codeigniter4-framework-2849e7f\system\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore(Array)
+#15 C:\Users\Home\Desktop\codeigniter4-framework-v4.5.5-0-g2849e7f\codeigniter4-framework-2849e7f\system\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('form', 'before')
+#16 C:\Users\Home\Desktop\codeigniter4-framework-v4.5.5-0-g2849e7f\codeigniter4-framework-2849e7f\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#17 C:\Users\Home\Desktop\codeigniter4-framework-v4.5.5-0-g2849e7f\codeigniter4-framework-2849e7f\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#18 C:\Users\Home\Desktop\codeigniter4-framework-v4.5.5-0-g2849e7f\codeigniter4-framework-2849e7f\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#19 C:\Users\Home\Desktop\codeigniter4-framework-v4.5.5-0-g2849e7f\codeigniter4-framework-2849e7f\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#20 C:\Users\Home\Desktop\codeigniter4-framework-v4.5.5-0-g2849e7f\codeigniter4-framework-2849e7f\system\rewrite.php(44): require_once('C:\\Users\\Home\\D...')
+#21 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No connection could be made because the target machine actively refused it in C:\Users\Home\Desktop\codeigniter4-framework-v4.5.5-0-g2849e7f\codeigniter4-framework-2849e7f\system\Database\MySQLi\Connection.php:231
+Stack trace:
+#0 C:\Users\Home\Desktop\codeigniter4-framework-v4.5.5-0-g2849e7f\codeigniter4-framework-2849e7f\system\Database\BaseConnection.php(421): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\Users\Home\Desktop\codeigniter4-framework-v4.5.5-0-g2849e7f\codeigniter4-framework-2849e7f\system\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\Users\Home\Desktop\codeigniter4-framework-v4.5.5-0-g2849e7f\codeigniter4-framework-2849e7f\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\Users\Home\Desktop\codeigniter4-framework-v4.5.5-0-g2849e7f\codeigniter4-framework-2849e7f\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(186): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\Users\Home\Desktop\codeigniter4-framework-v4.5.5-0-g2849e7f\codeigniter4-framework-2849e7f\vendor\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(NULL)
+#5 C:\Users\Home\Desktop\codeigniter4-framework-v4.5.5-0-g2849e7f\codeigniter4-framework-2849e7f\vendor\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('Config\\Auth', 'sessionConfig', NULL)
+#6 C:\Users\Home\Desktop\codeigniter4-framework-v4.5.5-0-g2849e7f\codeigniter4-framework-2849e7f\vendor\codeigniter4\settings\src\Helpers\setting_helper.php(25): CodeIgniter\Settings\Settings->get('Auth.sessionCon...')
+#7 C:\Users\Home\Desktop\codeigniter4-framework-v4.5.5-0-g2849e7f\codeigniter4-framework-2849e7f\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(685): setting('Auth.sessionCon...')
+#8 C:\Users\Home\Desktop\codeigniter4-framework-v4.5.5-0-g2849e7f\codeigniter4-framework-2849e7f\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(703): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+#9 C:\Users\Home\Desktop\codeigniter4-framework-v4.5.5-0-g2849e7f\codeigniter4-framework-2849e7f\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(390): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserKey('id')
+#10 C:\Users\Home\Desktop\codeigniter4-framework-v4.5.5-0-g2849e7f\codeigniter4-framework-2849e7f\vendor\codeigniter4\shield\src\Authentication\Authenticators\Session.php(374): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+#11 C:\Users\Home\Desktop\codeigniter4-framework-v4.5.5-0-g2849e7f\codeigniter4-framework-2849e7f\vendor\codeigniter4\shield\src\Filters\SessionAuth.php(54): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+#12 C:\Users\Home\Desktop\codeigniter4-framework-v4.5.5-0-g2849e7f\codeigniter4-framework-2849e7f\system\Filters\Filters.php(205): CodeIgniter\Shield\Filters\SessionAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), NULL)
+#13 C:\Users\Home\Desktop\codeigniter4-framework-v4.5.5-0-g2849e7f\codeigniter4-framework-2849e7f\system\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore(Array)
+#14 C:\Users\Home\Desktop\codeigniter4-framework-v4.5.5-0-g2849e7f\codeigniter4-framework-2849e7f\system\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('form', 'before')
+#15 C:\Users\Home\Desktop\codeigniter4-framework-v4.5.5-0-g2849e7f\codeigniter4-framework-2849e7f\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#16 C:\Users\Home\Desktop\codeigniter4-framework-v4.5.5-0-g2849e7f\codeigniter4-framework-2849e7f\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#17 C:\Users\Home\Desktop\codeigniter4-framework-v4.5.5-0-g2849e7f\codeigniter4-framework-2849e7f\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#18 C:\Users\Home\Desktop\codeigniter4-framework-v4.5.5-0-g2849e7f\codeigniter4-framework-2849e7f\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#19 C:\Users\Home\Desktop\codeigniter4-framework-v4.5.5-0-g2849e7f\codeigniter4-framework-2849e7f\system\rewrite.php(44): require_once('C:\\Users\\Home\\D...')
+#20 {main}
+CRITICAL - 2024-11-18 11:55:10 --> CodeIgniter\Database\Exceptions\DatabaseException: Unable to connect to the database.
+Main connection [MySQLi]: No connection could be made because the target machine actively refused it
+[Method: GET, Route: form]
+in SYSTEMPATH\Database\BaseConnection.php on line 467.
+ 1 SYSTEMPATH\Database\BaseConnection.php(616): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `settings`
+WHERE `context` IS NULL', [], false)
+ 3 VENDORPATH\codeigniter4\settings\src\Handlers\DatabaseHandler.php(186): CodeIgniter\Database\BaseBuilder->get()
+ 4 VENDORPATH\codeigniter4\settings\src\Handlers\DatabaseHandler.php(51): CodeIgniter\Settings\Handlers\DatabaseHandler->hydrate(null)
+ 5 VENDORPATH\codeigniter4\settings\src\Settings.php(59): CodeIgniter\Settings\Handlers\DatabaseHandler->has('Config\\Auth', 'sessionConfig', null)
+ 6 VENDORPATH\codeigniter4\settings\src\Helpers\setting_helper.php(25): CodeIgniter\Settings\Settings->get('Auth.sessionConfig')
+ 7 VENDORPATH\codeigniter4\shield\src\Authentication\Authenticators\Session.php(685): setting('Auth.sessionConfig')
+ 8 VENDORPATH\codeigniter4\shield\src\Authentication\Authenticators\Session.php(703): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserInfo()
+ 9 VENDORPATH\codeigniter4\shield\src\Authentication\Authenticators\Session.php(390): CodeIgniter\Shield\Authentication\Authenticators\Session->getSessionUserKey('id')
+10 VENDORPATH\codeigniter4\shield\src\Authentication\Authenticators\Session.php(374): CodeIgniter\Shield\Authentication\Authenticators\Session->checkUserState()
+11 VENDORPATH\codeigniter4\shield\src\Filters\SessionAuth.php(54): CodeIgniter\Shield\Authentication\Authenticators\Session->loggedIn()
+12 SYSTEMPATH\Filters\Filters.php(205): CodeIgniter\Shield\Filters\SessionAuth->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+13 SYSTEMPATH\Filters\Filters.php(184): CodeIgniter\Filters\Filters->runBefore([...])
+14 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\Filters\Filters->run('form', 'before')
+15 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+16 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+17 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+18 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+19 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-11-18 12:08:24 --> ErrorException: Undefined variable $student
+[Method: GET, Route: announcements/manage]
+in APPPATH\Views\manage_announcements.php on line 154.
+ 1 APPPATH\Views\manage_announcements.php(154): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $student', 'C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Views\\manage_announcements.php', 154)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Views\\manage_announcements.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('manage_announcements', [], true)
+ 5 APPPATH\Controllers\AnnouncementController.php(23): view('manage_announcements', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AnnouncementController->manageAnnouncements()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AnnouncementController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\public\\index.php')

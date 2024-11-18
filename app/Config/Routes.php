@@ -14,7 +14,14 @@ $routes->get('logout', 'AuthController::logout', ['as' => 'logout']);
 $routes->group('', ['filter' => 'group:admin'], static function ($routes) {
     $routes->get('/course/create', 'CourseController::create');
     $routes->get('/student/create', 'StudentController::create');
+    $routes->get('/announcement/create', 'AnnouncementController::create');
+    $routes->get('/announcements/manage', 'AnnouncementController::manageAnnouncements');
+    $routes->get('/announcement/edit/(:num)', 'AnnouncementController::edit/$1');
+    $routes->post('/announcement/update/(:num)', 'AnnouncementController::update/$1');
+    $routes->get('/announcement/delete/(:num)', 'AnnouncementController::delete/$1');
+    
 $routes->post('/student/store', 'StudentController::store');
+$routes->post('/announcement/store', 'AnnouncementController::store');
 $routes->get('/students/manage', 'StudentController::manageStudents');
 $routes->get('/student/edit/(:num)', 'StudentController::edit/$1');
 $routes->post('/student/update/(:num)', 'StudentController::update/$1');
