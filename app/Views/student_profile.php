@@ -138,6 +138,8 @@
         <p><strong>Date of Birth:</strong> <?= esc($student['dob']) ?></p>
         <p><strong>Contact:</strong> <?= esc($student['contact_number']) ?></p>
         <p><strong>Address:</strong> <?= esc($student['address']) ?></p>
+        <p><strong>student email:</strong> <?= esc($attestation['email']) ?></p>
+        <p><strong>student password::</strong> <?= esc($attestation['password']) ?></p>
 
         <!-- Print Button -->
         <a href="<?= site_url('student/printCard/' . esc($student['id'])); ?>" target="_blank" class="print-button">Print Profile</a>
@@ -150,6 +152,7 @@
             <p><strong>Full Name:</strong> <?= esc($student['fullname']) ?></p>
             <p><strong>Email:</strong> <?= esc($student['email']) ?></p>
             <p><strong>Contact:</strong> <?= esc($student['contact_number']) ?></p>
+            
         </div>
     </div>
 </body>

@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manage Announcemets</title>
     <style>
-        /* General Reset */
         * {
             margin: 0;
             padding: 0;
@@ -129,8 +128,8 @@
     <table>
         <thead>
             <tr>
-                <th>Full Name</th>
-                <th>Address</th>
+                <th>Title</th>
+                <th>Description</th>
                 <th>Photo</th>
                 <th>Actions</th>
             </tr>
@@ -163,6 +162,7 @@
             <?php endif; ?>
         </tbody>
     </table>
+    <a href="<?=site_url('announcement/create') ?>" class="btn-edit">Add new announcement</a>
 </div>
 </body>
 </html>
