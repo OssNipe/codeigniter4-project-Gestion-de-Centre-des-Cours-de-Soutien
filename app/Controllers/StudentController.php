@@ -152,7 +152,7 @@ class StudentController extends Controller
             $studentId = $model->insert($data);
     
             if($studentId) {
-                $attestationModel = new \App\Models\AttestationInscriptionModel();
+                $attestationModel = new AttestationInscriptionModel();
                 $attestationModel->insert([
                     'student_id'=> $studentId,
                     'email'     => $email,

@@ -1,0 +1,1 @@
+__ci_last_regenerate|i:1732224689;beforeLoginUrl|s:37:"http://localhost:8080/students/manage";__ci_vars|a:2:{s:14:"beforeLoginUrl";i:1732224973;s:5:"error";s:3:"old";}csrf_test_name|s:32:"e03f69f371842e84f94a66781f440e7b";_ci_previous_url|s:22:"http://localhost:8080/";user|a:1:{s:2:"id";i:37;}error|s:74:"You do not have the necessary permission to perform the desired operation.";

@@ -98,18 +98,17 @@
     <!-- Sidebar Navigation -->
     <div class="sidebar">
         <h2>My App</h2>
-        <a href="<?= site_url('student/create') ?>" class="active">Create student</a>
-        <a href="<?= site_url('students/manage') ?>">Students</a>
-        <a href="<?= site_url('course/create') ?>">Create course</a>
-        <a href="<?= site_url('courses/manage') ?>">Courses</a>
-        <a href="<?= site_url('student/renew') ?>">renew</a>
-        <a href="<?= site_url('dashboard') ?>">dashboard</a>
-        <a href="<?= site_url('revenue') ?>">revenu Reports</a>
-        <a href="<?= site_url('report/membership') ?>">Membership Reports</a>
-        <a href="<?= site_url('announcements/manage') ?>">Announcements</a>
-        <a href="<?= site_url('settings') ?>">Settings</a>
-        <a href="<?= site_url('logout') ?>" class="logout-btn">Logout</a>
-
+        <a href="<?= site_url('student/create') ?>" class="<?= uri_string() == 'student/create' ? 'active' : '' ?>">Create student</a>
+        <a href="<?= site_url('students/manage') ?>" class="<?= uri_string() == 'students/manage' ? 'active' : '' ?>">Students</a>
+        <a href="<?= site_url('course/create') ?>" class="<?= uri_string() == 'course/create' ? 'active' : '' ?>">Create course</a>
+        <a href="<?= site_url('courses/manage') ?>" class="<?= uri_string() == 'courses/manage' ? 'active' : '' ?>">Courses</a>
+        <a href="<?= site_url('student/renew') ?>" class="<?= uri_string() == 'student/renew' ? 'active' : '' ?>">Renew</a>
+        <a href="<?= site_url('dashboard') ?>" class="<?= uri_string() == 'dashboard' ? 'active' : '' ?>">Dashboard</a>
+        <a href="<?= site_url('revenue') ?>" class="<?= uri_string() == 'revenue' ? 'active' : '' ?>">Revenue Reports</a>
+        <a href="<?= site_url('report/membership') ?>" class="<?= uri_string() == 'report/membership' ? 'active' : '' ?>">Membership Reports</a>
+        <a href="<?= site_url('announcements/manage') ?>" class="<?= uri_string() == 'announcements/manage' ? 'active' : '' ?>">Announcements</a>
+        <a href="<?= site_url('settings') ?>" class="<?= uri_string() == 'settings' ? 'active' : '' ?>">Settings</a>
+        <a href="<?= site_url('logout') ?>" class="<?= uri_string() == 'logout' ? 'active' : '' ?> logout-btn">Logout</a>
     </div>
 </body>
 </html>
