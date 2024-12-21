@@ -1,0 +1,1 @@
+__ci_last_regenerate|i:1731943611;csrf_test_name|s:32:"16aa84cec904b336580f09911fad6282";_ci_previous_url|s:36:"http://localhost:8080/student/create";user|a:1:{s:2:"id";i:9;}message|s:65:"Student added successfully. Credentials have been sent via email.";__ci_vars|a:1:{s:7:"message";s:3:"old";}

@@ -1,0 +1,20 @@
+CRITICAL - 2024-11-16 17:30:08 --> Error: Call to a member function find() on null
+[Method: POST, Route: assign-group]
+in APPPATH\Controllers\UserManagement.php on line 26.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\UserManagement->assignGroup()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\UserManagement))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-11-16 17:53:17 --> Error: Call to a member function logout() on null
+[Method: GET, Route: logout]
+in APPPATH\Controllers\AuthController.php on line 12.
+ 1 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\AuthController->logout()
+ 2 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\AuthController))
+ 3 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 6 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+ 7 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\public\\index.php')

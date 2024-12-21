@@ -1,0 +1,99 @@
+CRITICAL - 2024-11-14 16:51:24 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "reports/membership_report.php"
+[Method: GET, Route: report/membership]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('reports/membership_report.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('reports/membership_report', [], true)
+ 3 APPPATH\Controllers\ReportController.php(12): view('reports/membership_report')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ReportController->membershipReport()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-11-14 16:51:36 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "reports/membership_report.php"
+[Method: GET, Route: report/membership]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('reports/membership_report.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('reports/membership_report', [], true)
+ 3 APPPATH\Controllers\ReportController.php(12): view('reports/membership_report')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ReportController->membershipReport()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-11-14 16:52:18 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "reports/membership_report.php"
+[Method: POST, Route: report/generate]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('reports/membership_report.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('reports/membership_report', [], true)
+ 3 APPPATH\Controllers\ReportController.php(59): view('reports/membership_report', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ReportController->generateReport()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-11-14 17:12:31 --> ErrorException: Undefined array key "enrollment_date"
+[Method: POST, Route: report/generate]
+in APPPATH\Views\membership_report.php on line 106.
+ 1 APPPATH\Views\membership_report.php(106): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "enrollment_date"', 'C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Views\\membership_report.php', 106)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Views\\membership_report.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('membership_report', [], true)
+ 5 APPPATH\Controllers\ReportController.php(59): view('membership_report', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ReportController->generateReport()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-11-14 17:44:54 --> ErrorException: Undefined array key "course_name"
+[Method: POST, Route: revenue/generate]
+in APPPATH\Views\revenue_report.php on line 106.
+ 1 APPPATH\Views\revenue_report.php(106): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "course_name"', 'C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Views\\revenue_report.php', 106)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Views\\revenue_report.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('revenue_report', [], true)
+ 5 APPPATH\Controllers\ReportController.php(99): view('revenue_report', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ReportController->generateRevenueReport()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-11-14 18:15:59 --> ErrorException: Undefined array key "expiry_date"
+[Method: POST, Route: revenue/generate]
+in APPPATH\Views\membership_report.php on line 117.
+ 1 APPPATH\Views\membership_report.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "expiry_date"', 'C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Views\\membership_report.php', 117)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Views\\membership_report.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('membership_report', [], true)
+ 5 APPPATH\Controllers\ReportController.php(106): view('membership_report', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ReportController->generateRevenueReport()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\public\\index.php')
+CRITICAL - 2024-11-14 18:18:13 --> ErrorException: Undefined array key "expiry_date"
+[Method: POST, Route: revenue/generate]
+in APPPATH\Views\membership_report.php on line 117.
+ 1 APPPATH\Views\membership_report.php(117): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "expiry_date"', 'C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Views\\membership_report.php', 117)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\app\\Views\\membership_report.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('membership_report', [], true)
+ 5 APPPATH\Controllers\ReportController.php(106): view('membership_report', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\ReportController->generateRevenueReport()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ReportController))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\Home\\Desktop\\codeigniter4-framework-v4.5.5-0-g2849e7f\\codeigniter4-framework-2849e7f\\public\\index.php')
